@@ -4,10 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 
 import java.io.IOException;
@@ -35,7 +32,7 @@ public class RootController implements Initializable {
     private TextArea messageArea;
 
     @FXML
-    private TextField passTextfield;
+    private PasswordField passwordField;
 
     @FXML
     private TextField portNumber;
