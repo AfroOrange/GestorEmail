@@ -2,7 +2,10 @@ package dad;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
+import java.util.Objects;
 
 public class EmailApp extends Application {
 
@@ -11,11 +14,14 @@ public class EmailApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Scene modificarScene = new Scene(rootcontroller.getRoot());
+        Scene emailScene = new Scene(rootcontroller.getRoot());
 
-        Stage modificarStage = new Stage();
-        modificarStage.setTitle("EmailAPP");
-        modificarStage.setScene(modificarScene);
-        modificarStage.show();
+        Image icon = new Image(Objects.requireNonNull(getClass().getResource("/images/email_sendicon.png")).toString());
+        Stage emailStage = new Stage();
+
+        emailStage.getIcons().add(icon);
+        emailStage.setTitle("EmailAPP");
+        emailStage.setScene(emailScene);
+        emailStage.show();
     }
 }
