@@ -42,7 +42,7 @@ The project uses the following dependencies:
 
 1. Run the application:
     ```sh
-    mvn exec:java -Dexec.mainClass="dad.EmailApp"
+    mvn exec:java 
     ```
 
 2. Fill in the required fields in the application interface:
